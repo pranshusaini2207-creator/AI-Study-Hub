@@ -7,14 +7,14 @@ A simple MERN stack web application for student collaboration — manage notes, 
 - **Frontend:** React.js, Tailwind CSS, Vite
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **AI:** Google Gemini API
+- **AI API:** OpenRouter (LLM Integration) 
 
 ## Features
 
 - JWT-based authentication (signup, login, logout)
 - Dashboard with stats, joined groups, recent notes, and messages
 - Notes module (create, view, delete)
-- AI Assistant (ask study questions via Gemini API)
+- AI Assistant (ask study questions via OpenRouter LLM)
 - Groups module (create up to 3 groups, join groups)
 
 ## Project Structure
@@ -30,7 +30,7 @@ ai-study-collaboration-hub/
 
 - Node.js (v18+)
 - MongoDB (local or Atlas)
-- Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
+- OpenRouter API key (https://openrouter.ai/)
 
 ## Setup
 
@@ -43,7 +43,7 @@ cd ai-study-collaboration-hub
 cd server
 npm install
 cp .env.example .env
-# Edit .env with your MongoDB URI, JWT secret, and Gemini API key
+# Edit .env with your MongoDB URI, JWT secret, and OpenRouter API key
 
 # Frontend
 cd ../client
@@ -58,7 +58,7 @@ Edit `server/.env`:
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/ai-study-hub
 JWT_SECRET=your_secure_jwt_secret
-GEMINI_API_KEY=your_gemini_api_key
+OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
 ### 3. Start MongoDB
